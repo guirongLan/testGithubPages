@@ -1,0 +1,49 @@
+
+a{
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+header {
+    justify-content: center;
+}
+
+.small_Screen_NavButton{
+    display: block;
+    font-size: 2em; 
+    font-weight: bold; 
+    border: 2px solid #FFFFFF;
+    background-color: var(--header_bg_color);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--txtColor);
+    z-index: 1000;
+}
+
+#menu {
+    position: fixed;    /* Posizione fissa rispetto alla finestra del browser */
+    top: 0;             /* Posiziona il menu al top della finestra */
+    left: 0;            /* Posiziona il menu al lato sinistro della finestra */
+    width: 100%;        /* Occupa tutta la larghezza della finestra */
+    height: 100%;       /* Occupa tutta l'altezza della finestra */
+    background-color: var(--header_bg_color);
+    display: none;      /* Nascondi il menu inizialmente */
+    justify-content: center;
+    align-items: center;
+}
+
+#menu ol{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu.active{
+    display: block;
+}
+
+.remove-scroll {
+    overflow-y: hidden;  /* Disables vertical scrolling */
+    height: 100vh;       /* Optional: set the height to view height */
+}
